@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.entwicklerkurs.demo</groupId>
   <artifactId>maven-web-demo</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>maven-web-demo Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <build>
@@ -31,17 +30,22 @@
       		</providerImplementations>
       	</configuration>
       	<dependencies>
+      	   <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-invoker</artifactId>
+              <version>2.2</version>
+            </dependency>
       		<dependency>
       			<groupId>org.apache.maven.scm</groupId>
       			<artifactId>maven-scm-provider-jgit</artifactId>
-      			<version>1.11.1</version>
+      			<version>1.9.5</version>
       		</dependency>
       	</dependencies>
       </plugin>
      </plugins>
   </build>
   <scm>
-  	<tag>HEAD</tag>
+  	<tag>maven-web-demo-0.0.1</tag>
   	<url>scm:git:https://github.com/Marcorepository/mavenWarDemoRep.git</url>
   	<connection>scm:git:https://github.com/Marcorepository/mavenWarDemoRep.git</connection>
   	<developerConnection>scm:git:https://github.com/Marcorepository/mavenWarDemoRep.git</developerConnection>
