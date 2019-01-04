@@ -3,7 +3,7 @@
   <groupId>de.entwicklerkurs.demo</groupId>
   <artifactId>maven-web-demo</artifactId>
   <packaging>war</packaging>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   <name>maven-web-demo Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <build>
